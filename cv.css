@@ -1,0 +1,181 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  margin: 5vh;
+}
+
+.left {
+  position: relative;
+  background-color: darkgreen;
+  padding: 40px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  align-items: center;
+}
+
+.profile .profile_img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.profile .profile_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile h2 {
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.profile span {
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.contact {
+  padding-top: 30px;
+}
+
+.contact h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+
+.contact li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contact li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: rgb(80, 191, 58);
+}
+
+.right {
+  position: relative;
+  background-color: rgb(109, 160, 109);
+  padding: 40px;
+}
+
+.card {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  margin-bottom: 30px;
+  padding: 15px 30px 30px 30px;
+  background-color: #fefefe;
+  border-radius: 10px;
+}
+
+.card > p {
+  color: #0f4520;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  letter-spacing: 0.8px;
+}
+
+.tag {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tag span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #0e141e;
+}
+
+.tag span span {
+  color: #738f93;
+}
+
+.li_skills {
+  list-style: square;
+}
+
+.interest {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interest li {
+  list-style: none;
+  font-weight: 400;
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 button {
+  background: linear-gradient(135deg, #4caf50, #2e8b57);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.button1 button:hover {
+  background: linear-gradient(135deg, #2e8b57, #4caf50);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.button1 button:active {
+  background: linear-gradient(135deg, #228b22, #006400);
+  transform: translateY(1px);
+}
